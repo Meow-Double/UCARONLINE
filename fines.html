@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:300,regular,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--css links-->
+    <link rel="stylesheet" href="../css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <div class="nav__info">
+              <div class="logo">
+                <img src="../img/logo.svg" alt="logo" class="logo-img" />
+              </div>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#!" class="nav__item-link nav__link--active"
+                    >Проверить штрафы</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a href="#!" class="nav__item-link">Оформить осаго</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#!" class="nav__item-link">Проверить налоги</a>
+                </li>
+                <li
+                  class="nav__item nav__item-dropdown"
+                  easy-toggle="#drop1"
+                  easy-class="nav__item-dropdown-box--active"
+                >
+                  <a href="#!" class="nav__item-link">Еще</a>
+                  <div id="drop1" class="nav__item-dropdown-box">
+                    <a href="#!" class="nav__item-dropdown-link"
+                      >Проверить ФССП</a
+                    >
+                    <a href="#!" class="nav__item-dropdown-link"
+                      >Полезная информация</a
+                    >
+                    <a href="#!" class="nav__item-dropdown-link"
+                      >Проверить историю авто</a
+                    >
+                    <a href="#!" class="nav__item-dropdown-link"
+                      >Обжаловать штраф</a
+                    >
+                    <a href="#!" class="nav__item-dropdown-link"
+                      >Юридическим лицам</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__social">
+              <div class="nav__social-item-reg">
+                <a href="#!" class="nav__social-link">
+                  <img
+                    src="./img/person-ico.svg"
+                    alt="images"
+                    class="nav__social-reg-img"
+                  />
+                </a>
+              </div>
+              <div class="nav__social-item">
+                <a class="nav__social-link" href="#!">
+                  <img
+                    class="nav__social-img"
+                    src="../img/vk.svg"
+                    alt="social ico"
+                  />
+                </a>
+              </div>
+              <div class="nav__social-item">
+                <a class="nav__social-link" href="#!">
+                  <img
+                    class="nav__social-img"
+                    src="../img/instagram.svg"
+                    alt="social ico"
+                  />
+                </a>
+              </div>
+              <div class="nav__social-item">
+                <button class="nav__social-cabinet">Личный кабинет</button>
+              </div>
+              <div class="nav__burger-menu">
+                <input
+                  class="nav__burger-check"
+                  type="checkbox"
+                  name="burger"
+                  id="burger"
+                />
+                <label class="nav__burger burger" for="burger">
+                  <span class="burger__line burger__line--first"></span>
+                  <span class="burger__line burger__line--second"></span>
+                  <span class="burger__line burger__line--third"></span>
+                </label>
+              </div>
+
+              <div
+                class="nav__arrow-menu nav__arrow-dropdown"
+                easy-toggle="#drop-menu"
+                easy-class="nav__arrow-dropdown-box--active"
+              >
+                <a href="#!" class="nav__arrow-item"></a>
+                <div id="drop-menu" class="nav__arrow-dropdown-box">
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Проверить штрафы</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Оформить осаго</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Проверить налоги</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Проверить ФССП</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Полезная информация</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Проверить историю авто</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Обжаловать штраф</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Юридическим лицам</a
+                  >
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="main__inner">
+            <aside class="aside-menu">
+              <div class="aside-menu__inner">
+                <ul class="aside-menu__items">
+                  <li class="aside-menu__item">
+                    <a href="./news.html" class="aside-menu__item-link">
+                      <!-- <img src="./img/news/aside-ico-1.svg" alt="images" class="aside-menu__item-link-img"/> -->
+                      <svg class="aside-menu__item-link-img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_55_29510)">
+                        <path class="aside-menu__item-link-img--active" d="M13.7127 5.64062H8.74574C8.30797 5.64062 7.95312 5.99543 7.95312 6.43324C7.95312 6.87102 8.30793 7.22586 8.74574 7.22586H13.7127C14.1508 7.22586 14.5054 6.87105 14.5054 6.43324C14.5053 5.99543 14.1505 5.64062 13.7127 5.64062Z" fill="#6F7990"/>
+                        <path class="aside-menu__item-link-img--active" d="M15.615 9.47168H8.74574C8.30797 9.47168 7.95312 9.82648 7.95312 10.2643C7.95312 10.7021 8.30793 11.0569 8.74574 11.0569H15.615C16.0527 11.0569 16.4076 10.7021 16.4076 10.2643C16.4076 9.82648 16.0527 9.47168 15.615 9.47168Z" fill="#6F7990"/>
+                        <path class="aside-menu__item-link-img--active" d="M19.2074 0.673828H5.17832C4.74055 0.673828 4.3857 1.02863 4.3857 1.46645V8.94332H2.98547C1.33922 8.94332 0 10.2828 0 11.9288V16.3409C0 17.9872 1.33922 19.3264 2.98547 19.3264C3.1202 19.3264 3.25285 19.3174 3.38258 19.3H16.4597C18.4116 19.3 20 17.7119 20 15.7597V1.46645C20 1.02863 19.6452 0.673828 19.2074 0.673828ZM4.38574 16.3409C4.38574 17.0202 3.89934 17.5882 3.25656 17.7148H2.98551V17.7412C2.21324 17.7412 1.58523 17.1129 1.58523 16.3409V11.9288C1.58523 11.1568 2.21352 10.5285 2.98551 10.5285H4.38578V16.3409H4.38574ZM18.4148 15.7597C18.4148 16.8194 17.5197 17.7148 16.4597 17.7148H5.63566C5.84992 17.3034 5.97094 16.836 5.97094 16.3409V2.25902H18.4148V15.7597Z" fill="#6F7990"/>
+                        <path class="aside-menu__item-link-img--active" d="M13.7127 13.0654H8.74574C8.30797 13.0654 7.95312 13.4202 7.95312 13.858C7.95312 14.2958 8.30793 14.6507 8.74574 14.6507H13.7127C14.1508 14.6507 14.5054 14.2959 14.5054 13.858C14.5053 13.4202 14.1505 13.0654 13.7127 13.0654Z" fill="#6F7990"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_55_29510">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                      <span
+                        class="aside-menu__item-link-text aside-menu__item-link-text"
+                        >Новости</span
+                      >
+                    </a>
+                  </li>
+                  <li class="aside-menu__item">
+                    <a href="./articles.html" class="aside-menu__item-link">
+                      <!-- <img src="./img/news/aside-ico-2.svg" alt="images" class="aside-menu__item-link-img"/> -->
+                      <svg class="aside-menu__item-link-img" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="aside-menu__item-link-img--active" fill-rule="evenodd" clip-rule="evenodd" d="M11.2181 3.58522C11.2181 3.26801 11.0101 2.98817 10.7063 2.89713C10.7063 2.89713 4.94485 1.1683 2.35639 0.39205C1.84847 0.239675 1.29839 0.336466 0.872891 0.652716C0.448349 0.968966 0.197266 1.46826 0.197266 1.99822V14.3722C0.197266 15.113 0.683141 15.7656 1.39231 15.9784C3.58306 16.6358 10.2923 18.6483 10.2923 18.6483C10.5108 18.7135 10.7456 18.6723 10.9287 18.5371C11.1108 18.401 11.2181 18.1873 11.2181 17.9602V3.58522ZM9.7806 4.11997V16.9942L1.80535 14.6013C1.70377 14.5715 1.63477 14.4776 1.63477 14.3722V1.99822C1.63477 1.92251 1.67022 1.85159 1.73156 1.80559C1.79193 1.76055 1.87052 1.74713 1.94335 1.76917L9.7806 4.11997Z" fill="#6F7990"/>
+                        <path class="aside-menu__item-link-img--active" fill-rule="evenodd" clip-rule="evenodd" d="M10.293 2.89713C9.98921 2.98817 9.78125 3.26801 9.78125 3.58522V17.9602C9.78125 18.1873 9.88858 18.401 10.0707 18.5371C10.2537 18.6723 10.4885 18.7135 10.707 18.6483C10.707 18.6483 17.4163 16.6358 19.607 15.9784C20.3162 15.7656 20.8021 15.113 20.8021 14.3722V1.99822C20.8021 1.46826 20.551 0.968966 20.1265 0.652716C19.701 0.336466 19.1509 0.239675 18.643 0.39205C16.0545 1.1683 10.293 2.89713 10.293 2.89713ZM11.2188 4.11997L19.056 1.76917C19.1288 1.74713 19.2074 1.76055 19.2678 1.80559C19.3291 1.85159 19.3646 1.92251 19.3646 1.99822V14.3722C19.3646 14.4776 19.2956 14.5715 19.194 14.6013L11.2188 16.9942V4.11997Z" fill="#6F7990"/>
+                        <path class="aside-menu__item-link-img--active" fill-rule="evenodd" clip-rule="evenodd" d="M13.5818 6.92972L17.4152 5.77972C17.7947 5.66568 18.0103 5.2651 17.8963 4.88464C17.7822 4.50514 17.3816 4.28951 17.0012 4.40355L13.1678 5.55355C12.7883 5.6676 12.5727 6.06818 12.6868 6.44864C12.8008 6.82814 13.2014 7.04376 13.5818 6.92972Z" fill="#6F7990"/>
+                        <path class="aside-menu__item-link-img--active" fill-rule="evenodd" clip-rule="evenodd" d="M7.83119 5.55355L3.99786 4.40355C3.6174 4.28951 3.21681 4.50514 3.10277 4.88464C2.98873 5.2651 3.20436 5.66568 3.58386 5.77972L7.41719 6.92972C7.79765 7.04376 8.19823 6.82814 8.31227 6.44864C8.42631 6.06818 8.21069 5.6676 7.83119 5.55355Z" fill="#6F7990"/>
+                        <path class="aside-menu__item-link-img--active" fill-rule="evenodd" clip-rule="evenodd" d="M13.5818 10.3799L17.4152 9.22992C17.7947 9.11588 18.0103 8.71529 17.8963 8.33483C17.7822 7.95533 17.3816 7.73971 17.0012 7.85375L13.1678 9.00375C12.7883 9.11779 12.5727 9.51837 12.6868 9.89883C12.8008 10.2783 13.2014 10.494 13.5818 10.3799Z" fill="#6F7990"/>
+                        <path class="aside-menu__item-link-img--active" fill-rule="evenodd" clip-rule="evenodd" d="M7.83119 9.00375L3.99786 7.85375C3.6174 7.73971 3.21681 7.95533 3.10277 8.33483C2.98873 8.71529 3.20436 9.11588 3.58386 9.22992L7.41719 10.3799C7.79765 10.494 8.19823 10.2783 8.31227 9.89883C8.42631 9.51837 8.21069 9.11779 7.83119 9.00375Z" fill="#6F7990"/>
+                        <path class="aside-menu__item-link-img--active" fill-rule="evenodd" clip-rule="evenodd" d="M13.5818 13.8301L17.4152 12.6801C17.7947 12.5661 18.0103 12.1655 17.8963 11.785C17.7822 11.4055 17.3816 11.1899 17.0012 11.3039L13.1678 12.4539C12.7883 12.568 12.5727 12.9686 12.6868 13.349C12.8008 13.7285 13.2014 13.9442 13.5818 13.8301Z" fill="#6F7990"/>
+                        <path class="aside-menu__item-link-img--active" fill-rule="evenodd" clip-rule="evenodd" d="M7.83119 12.4539L3.99786 11.3039C3.6174 11.1899 3.21681 11.4055 3.10277 11.785C2.98873 12.1655 3.20436 12.5661 3.58386 12.6801L7.41719 13.8301C7.79765 13.9442 8.19823 13.7285 8.31227 13.349C8.42631 12.9686 8.21069 12.568 7.83119 12.4539Z" fill="#6F7990"/>
+                        </svg>
+                        
+                        
+                      <span class="aside-menu__item-link-text">Статьи</span>
+                    </a>
+                  </li>
+                  <li class="aside-menu__item aside-menu__item--active">
+                    <a href="./offenses.html" class="aside-menu__item-link">
+                      <!-- <img  src="./img/news/aside-ico-3.svg"  alt="images" class="aside-menu__item-link-img"/> -->
+                      <svg class="aside-menu__item-link-img" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_55_29451)">
+                        <path class="aside-menu__item-link-img--active" d="M15.5427 18.9172H14.8688V16.8958C14.8688 16.5236 14.5671 16.2219 14.195 16.2219H3.36905C2.99692 16.2219 2.69522 16.5236 2.69522 16.8958V18.9172H2.02139C0.906838 18.9172 0 19.824 0 20.9386V22.3312C0 22.7033 0.301695 22.996 0.673828 22.996H16.8903C17.2624 22.996 17.5641 22.7033 17.5641 22.3312V20.9386C17.5641 19.824 16.6573 18.9172 15.5427 18.9172ZM4.04288 17.5606H13.5212V18.9171H4.04288V17.5606ZM16.2164 21.6573H1.34761V20.9386C1.34761 20.567 1.64989 20.2558 2.02144 20.2558C9.58794 20.2558 12.9212 20.2732 15.5427 20.2558C15.9142 20.2558 16.2165 20.567 16.2165 20.9386V21.6573H16.2164Z" fill="#6F7990"/>
+                        <path class="aside-menu__item-link-img--active" d="M22.6305 18.3679C22.6294 18.3664 22.6284 18.365 22.6274 18.3636L16.6025 9.96403C17.0567 9.5065 17.4573 9.02099 17.7968 8.51705C18.3304 8.65016 18.9027 8.55438 19.3704 8.22448L19.5338 8.10921C20.3996 7.49845 20.607 6.29724 19.9981 5.43402L16.7738 0.818342C16.1617 -0.0494137 14.964 -0.256414 14.0961 0.355781L13.9327 0.471051C13.4756 0.7935 13.1783 1.30453 13.1264 1.90096C11.9347 2.2067 10.7302 2.77509 9.60955 3.56558C8.48835 4.35652 7.54836 5.30114 6.86051 6.32185C6.81456 6.3104 6.76815 6.30007 6.72103 6.29194C6.21526 6.20456 5.70575 6.31943 5.28636 6.61528L5.12302 6.73051C4.25518 7.3427 4.04831 8.54037 4.66051 9.40826L7.88298 13.9765C8.49401 14.8426 9.69531 15.0495 10.5607 14.439L10.7241 14.3238C11.1435 14.0279 11.4226 13.5864 11.5099 13.0808C11.5181 13.0336 11.5239 12.9865 11.5285 12.9393C12.1197 12.7878 12.714 12.5719 13.2998 12.2958L19.3286 20.7009C19.9684 21.6051 21.2252 21.833 22.1439 21.185C23.0568 20.5409 23.2746 19.2809 22.6305 18.3679ZM14.7095 1.57227C14.877 1.45417 15.0309 1.3137 15.3014 1.36046C15.4525 1.38656 15.5843 1.46989 15.6709 1.59262L18.8951 6.20829C19.0776 6.46686 19.0156 6.82561 18.757 7.00799L18.5936 7.12326C18.335 7.30564 17.9763 7.2437 17.7939 6.98513L14.5714 2.41689C14.3873 2.15594 14.4528 1.75339 14.7095 1.57227ZM9.94728 13.2225L9.78394 13.3377C9.52532 13.5201 9.16653 13.4581 8.98424 13.1996L5.76172 8.63133C5.57894 8.37222 5.64061 8.01447 5.8999 7.83163C6.06715 7.71362 6.22127 7.57311 6.4917 7.61983C6.64278 7.64593 6.77458 7.72926 6.86294 7.8545L10.0855 12.4228C10.2682 12.6819 10.2066 13.0396 9.94728 13.2225ZM11.1808 11.6376L7.97013 7.08616C8.56687 6.19661 9.39348 5.36722 10.3864 4.66675C11.3793 3.96633 12.438 3.46581 13.4762 3.20208L16.6868 7.75347C16.0563 8.69324 15.2074 9.51194 14.2705 10.1728C13.336 10.832 12.2797 11.3584 11.1808 11.6376ZM14.4905 11.6436C14.678 11.5263 14.8639 11.4035 15.0473 11.2741C15.234 11.1424 15.415 11.006 15.5913 10.8662L17.9592 14.1675L16.8581 14.9443L14.4905 11.6436ZM17.6435 16.0394L18.7447 15.2626L19.5302 16.3577L18.429 17.1345L17.6435 16.0394ZM21.6427 19.6478C21.5413 20.235 20.775 20.4133 20.4281 19.9215C20.4271 19.9201 20.4261 19.9187 20.425 19.9172L19.2145 18.2296L20.3157 17.4528L21.5305 19.1465C21.6333 19.2932 21.6732 19.4712 21.6427 19.6478Z" fill="#6F7990"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_55_29451">
+                        <rect width="23" height="23" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                      <span class="aside-menu__item-link-text">коап</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+            <section class="news fines-page">
+              <div class="breadcrumbs fines-breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#!">Главная </a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#!"
+                      >Полезная информация
+                    </a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#!"
+                      >КОАП
+                    </a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a
+                      class="breadcrumbs__link breadcrumbs__link--active"
+                      href="#!"
+                      >Штрафы за превышение скорости</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="fines__inner">
+                <h1 class="fines__title">Штрафы за превышение скорости</h1>
+                <div class="fines__buttons">
+                    <button class="fines__btn fines__btn--active">Статья</button>
+                    <button class="fines__btn">Описание нарушения</button>
+                </div>
+                <ul class="fines__items">
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.10 ч.1</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Пересечение железнодорожного пути вне железнодорожного переезда, выезд на железнодорожный переезд при закрытом или закрывающемся шлагбауме либо при запрещающем сигнале светофора или дежурного по переезду, а равно остановка или стоянка на железнодорожном переезде</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф 1000 руб. или лишение права управления ТС на срок от 3 до 6 мес.; при повторном нарушении – лишение права управления на 1 год</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.12 ч. 1</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Проезд на запрещающий сигнал светофора или на запрещающий жест регулировщика, за исключением случаев, предусмотренных частью 1 статьи 12.10 настоящего Кодекса и частью 2 настоящей статьи</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф 1000 руб.; при повторном нарушении – 5000 рублей или лишение права управления от 4 до 6 месяцев</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.12 ч. 2</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Невыполнение требования ПДД об остановке перед стоп-линией, обозначенной дорожными знаками или разметкой проезжей части дороги, при запрещающем сигнале светофора или запрещающем жесте регулировщика</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф 800 руб.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.15 ч. 1</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Нарушение правил расположения ТС на проезжей части дороги, встречного разъезда, а равно движение по обочинам или пересечение организованной транспортной или пешей колонны либо занятие места в ней</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф 1500 руб.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.15 ч. 2</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Движение по велосипедным или пешеходным дорожкам либо тротуарам в нарушение ПДД</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф 2000 руб.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.15 ч. 3</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Выезд в нарушение ПДД на полосу, предназначенную для встречного движения, при объезде препятствия либо на трамвайные пути встречного направления при объезде препятствия</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф от 1000 до 1500 руб.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.15 ч. 4</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Выезд в нарушение ПДД на полосу, предназначенную для встречного движения, либо на трамвайные пути встречного направления, за исключением случаев, предусмотренных частью 3 настоящей статьи</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф 5000 руб. или лишение права управления ТС на срок от 4 до 6 мес.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.15 ч. 5</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Повторное совершение административного правонарушения, предусмотренного ч. 4 ст. 12.15 КоАП РФ</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">лишение права управления ТС на срок 1 год или в случае фиксации административного правонарушения работающими в автоматическом режиме специальными техническими средствами, имеющими функции фото- и киносъемки, видеозаписи, или средствами фото- и киносъемки,</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.2 ч. 1</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Управление ТС с нечитаемыми, нестандартными или установленными с нарушением требований государственного стандарта государственными регистрационными знаками, за исключением случаев, предусмотренных частью 2 настоящей статьи</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">предупреждение или штраф 500 руб.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.2 ч. 2</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Управление ТС без государственных регистрационных знаков, а равно управление ТС без установленных на предусмотренных для этого местах государственных регистрационных знаков либо управление ТС с государственными регистрационными знаками, видоизмененными или оборудованными с применением устройств или материалов, препятствующих идентификации государственных регистрационных знаков либо позволяющих их видоизменить или скрыть.</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф 5000 руб. или лишение права управления ТС на срок от 1 до 3 мес.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number"></div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text"></div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle"></div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.3 ч. 1</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Управление ТС водителем, не имеющим при себе регистрационных документов на ТС, а в установленных случаях документов, предусмотренных таможенным законодательством Таможенного союза, с отметками таможенных органов, подтверждающими временный ввоз ТС</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">предупреждение или штраф 500 руб., отстранение от управления ТС, задержание ТС</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.3 ч. 2</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Управление ТС водителем, не имеющим при себе документов на право управления им, страхового полиса обязательного страхования гражданской ответственности владельцев ТС, за исключением случая, предусмотренного частью 2 статьи 12.37 настоящего Кодекса, а в случаях, предусмотренных законодательством, путевого листа или товарно-транспортных документов</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">предупреждение или штраф 500 руб.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.37 ч. 2</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Неисполнение владельцем ТС установленной федеральным законом обязанности по страхованию своей гражданской ответственности, а равно управление ТС, если такое обязательное страхование заведомо отсутствует</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф 800 руб.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.37 ч. 1</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Управление ТС в период его использования, не предусмотренный страховым полисом обязательного страхования гражданской ответственности владельцев ТС, а равно управление ТС с нарушением предусмотренного данным страховым полисом условия управления этим ТС только указанными в данном страховом полисе водителями</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф 500 руб.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.5 ч. 3</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Управление ТС, на котором установлены стекла (в том числе покрытые прозрачными цветными пленками), светопропускание которых не соответствует требованиям технического регламента о безопасности колесных ТС</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф 1000 руб.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.6</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Управление ТС водителем, не пристегнутым ремнем безопасности, перевозка пассажиров, не пристегнутых ремнями безопасности, если конструкцией ТС предусмотрены ремни безопасности, а равно управление мотоциклом или мопедом либо перевозка на мотоцикле пассажиров без мотошлемов или в незастегнутых мотошлемах</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф 1000 руб.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.7 ч. 1</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Управление ТС водителем, не имеющим права управления ТС (за исключением учебной езды)</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф от 5000 до 15000 руб.</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.8 ч. 1</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Управление ТС водителем, находящимся в состоянии алкогольного или наркотического опьянения.</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">30000 рублей с лишением права управления от 1,5 до 2 лет; при повторном нарушении – 50000 рублей с лишением права управления на 3 года</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.8 ч. 3</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Управление ТС водителем, находящимся в состоянии опьянения и не имеющим права управления ТС либо лишенным права управления ТС</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">арест на срок от 10 до 15 суток или штраф 30000 руб. для лиц, в отношении которых не может применяться арест</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.9 ч. 1</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Превышение установленной скорости движения ТС на величину не менее 10, но не более 20 километров в час</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">Норма исключается</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number"></div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text"></div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle"></div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.9 ч. 2</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Превышение установленной скорости движения транспортного средства на величину более 20, но не более 40 километров в час</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">Норма исключается</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.9 ч. 3</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Превышение установленной скорости движения ТС на величину более 40, но не более 60 километров в час</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф от 1000 до 1500 руб.; при повторном нарушении – от 2000 до 2500 рублей (ст. 12.9, ч.6)</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.9 ч. 4</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Превышение установленной скорости движения ТС на величину более 60 километров в час</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">штраф от 2000 до 2500 руб. или лишение права управления ТС на срок от 4 до 6 мес.; при повторном нарушении – лишение права управления на 1 год (ст. 12.9, ч.7), при фиксации при помощи камер - 5000 руб. (ст. 12.9, ч.7)</div>
+                        </div>
+                    </li>
+                    <li class="fines__item">
+                        <div class="fines__item-number">12.9 ч. 5</div>
+                        <div class="fines__item-content">
+                            <div class="fines__item-text">Превышение установленной скорости движения транспортного средства на величину более 80 километров в час</div>
+                            <h3 class="fines__item-title">Ответственность</h3>
+                            <div class="fines__item-subtitle">5000 рублей либо лишение права управления на 6 месяцев; при повторном нарушении –лишение права управления на 1 год (ст. 12.9, ч.7), при фиксации при помощи камер - 5000 руб. (ст. 12.9, ч.7)</div>
+                        </div>
+                    </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__content">
+              <div class="footer__content-info">
+                <div class="logo">
+                  <img src="../img/logo.svg" alt="logo" class="logo-img" />
+                </div>
+                <a href="#!" class="footer__info-phone">+7 495 123 45 57</a>
+                <a href="#!" class="footer__info-email">ucar@mail.com</a>
+                <div class="footer__copyright">
+                  © ООО «U-Car», 2022 Все права защищены. Предложение не
+                  является публичной офертой.
+                </div>
+              </div>
+              <nav class="footer__content-nav">
+                <div class="footer__nav-column">
+                  <h6 class="footer__nav-title footer__title">Услуги</h6>
+                  <ul class="footer__nav-link">
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link"
+                        >Проверить и оплатить штрафы
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link"
+                        >Проверить и оплатить ФССП
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link"
+                        >Обжаловать штраф
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link">Оформить ОСАГО</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link">Оплатить налоги</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__nav-column">
+                  <h6 class="footer__nav-title footer__title">
+                    Правовая информация
+                  </h6>
+                  <ul class="footer__nav-link">
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link">Статьи и обзоры </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link">Автоновости </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link">Таблица</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link"
+                        >Нормативные документы
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link"
+                        >Подразделения ГИБДД</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="footer__pay">
+              <h6 class="footer__pay-title footer__title">Мы принимаем</h6>
+              <div class="footer__cards">
+                <div class="footer__card">
+                  <a href="#!" class="footer__card-link">
+                    <img
+                      src="../img/footer-card-1.svg"
+                      alt="images card"
+                      class="footer__card-img"
+                    />
+                  </a>
+                </div>
+                <div class="footer__card">
+                  <a href="#!" class="footer__card-link">
+                    <img
+                      src="../img/footer-card-2.svg"
+                      alt="images card"
+                      class="footer__card-img"
+                    />
+                  </a>
+                </div>
+                <div class="footer__card">
+                  <a href="#!" class="footer__card-link">
+                    <img
+                      src="../img/footer-card-3.svg"
+                      alt="images card"
+                      class="footer__card-img"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="footer__social">
+                <a class="footer__social-item" href="#!">
+                  <img
+                    src="../img/vk.svg"
+                    alt="ico"
+                    class="footer__social-ico"
+                  />
+                </a>
+                <a class="footer__social-item" href="#!">
+                  <img
+                    src="../img/instagram.svg"
+                    alt="ico"
+                    class="footer__social-ico"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <!-- <script src="../js libs/easy-toggler-master/dist/easy-toggler.jss"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"
+      defer
+    ></script>
+  </body>
+</html>

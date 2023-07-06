@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:300,regular,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--css links-->
+    <link rel="stylesheet" href="../css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+            <!-- <button class="modal-btn" >Открой меня</button> -->
+      <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <div class="nav__info">
+              <div class="logo">
+                <img src="../img/logo.svg" alt="logo" class="logo-img" />
+              </div>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#!" class="nav__item-link nav__link--active"
+                    >Проверить штрафы</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a href="https://strahovka.guru/?wid=IValGf" class="nav__item-link">Оформить осаго</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#!" class="nav__item-link">Проверить налоги</a>
+                </li>
+                <li
+                  class="nav__item nav__item-dropdown"
+                >
+                  <a href="#!" class="nav__item-link">Еще</a>
+                  <div id="drop1" class="nav__item-dropdown-box">
+                    <a href="#!" class="nav__item-dropdown-link"
+                      >Проверить ФССП</a
+                    >
+                    <div class="nav__item-dropdown--info-dropdown">
+                      <a href="#!" class="nav__item-dropdown-link ">Полезная информация </a>
+                      <ul class="nav__info-dropdown">
+                        <li class="nav__info-dropdown-item">
+                          <a href="./news.html" class="nav__info-dropdown-link">Новости</a>
+                        </li>
+                        <li class="nav__info-dropdown-item">
+                          <a href="./articles.html" class="nav__info-dropdown-link">Статьи</a>
+                        </li>
+                        <li class="nav__info-dropdown-item">
+                          <a href="./offenses.html" class="nav__info-dropdown-link">Коап</a>
+                        </li>
+                      </ul>
+                    </div>
+                    
+
+                   
+                      
+                    <a href="#!" class="nav__item-dropdown-link"
+                      >Проверить историю авто</a
+                    >
+                    <a href="#!" class="nav__item-dropdown-link"
+                      >Обжаловать штраф</a
+                    >
+                    <a href="#!" class="nav__item-dropdown-link"
+                      >Юридическим лицам</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__social">
+              <div class="nav__social-item-reg">
+                <a href="#!" class="nav__social-link">
+                  <img
+                    src="./img/person-ico.svg"
+                    alt="images"
+                    class="nav__social-reg-img"
+                  />
+                </a>
+              </div>
+              <div class="nav__social-item">
+                <a class="nav__social-link" href="#!">
+                  <img
+                    class="nav__social-img"
+                    src="../img/vk.svg"
+                    alt="social ico"
+                  />
+                </a>
+              </div>
+              <div class="nav__social-item">
+                <a class="nav__social-link" href="#!">
+                  <img
+                    class="nav__social-img"
+                    src="../img/instagram.svg"
+                    alt="social ico"
+                  />
+                </a>
+              </div>
+              <div class="nav__social-item" data-modal-window="modal-window" data-modal-close="modal-window-close">
+                <button class="nav__social-cabinet">Личный кабинет</button>
+              </div>
+              <div class="nav__burger-menu">
+                <input
+                  class="nav__burger-check"
+                  type="checkbox"
+                  name="burger"
+                  id="burger"
+                />
+                <label class="nav__burger burger" for="burger">
+                  <span class="burger__line burger__line--first"></span>
+                  <span class="burger__line burger__line--second"></span>
+                  <span class="burger__line burger__line--third"></span>
+                </label>
+              </div>
+
+              <div
+                class="nav__arrow-menu nav__arrow-dropdown"
+                easy-toggle="#drop-menu"
+                easy-class="nav__arrow-dropdown-box--active"
+              >
+                <a href="#!" class="nav__arrow-item"></a>
+                <div id="drop-menu" class="nav__arrow-dropdown-box">
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Проверить штрафы</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Оформить осаго</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Проверить налоги</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Проверить ФССП</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Полезная информация</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Проверить историю авто</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Обжаловать штраф</a
+                  >
+                  <a href="#!" class="nav__arrow-dropdown-link"
+                    >Юридическим лицам</a
+                  >
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="page-info">
+          <div class="container">
+            <div class="page-info__inner">
+              <h1 class="page-info__title title">
+                Проверка и оплата штрафов ГИБДД
+              </h1>
+              <div class="page-info__subtitle">
+                Укажите номер документа, по которому хотите проверить штрафы и
+                электронную почту для получения информации
+              </div>
+              <img
+                src="./img/content/page-bg-1.png"
+                alt="images"
+                class="page-info__bg-img"
+              />
+            </div>
+          </div>
+          <div class="burger-menu">
+            <ul class="burger__items">
+              <li class="burger__item">
+                <a href="#!" class="burger__item-link">Проверить штрафы</a>
+              </li>
+              <li class="burger__item">
+                <a href="#!" class="burger__item-link">Оформить осаго</a>
+              </li>
+              <li class="burger__item">
+                <a href="#!" class="burger__item-link">Проверить налоги</a>
+              </li>
+              <li class="burger__item">
+                <a href="#!" class="burger__item-link">Проверить ФССП</a>
+              </li>
+              <li class="burger__item">
+                <a href="#!" class="burger__item-link">Полезная информация</a>
+              </li>
+              <li class="burger__item">
+                <a href="#!" class="burger__item-link"
+                  >Проверить историю авто</a
+                >
+              </li>
+              <li class="burger__item">
+                <a href="#!" class="burger__item-link">Обжаловать штраф</a>
+              </li>
+              <li class="burger__item">
+                <a href="#!" class="burger__item-link">Юридическим лицам</a>
+              </li>
+              <li class="burger__item">
+                <a href="#!" class="burger__item-link"></a>
+              </li>
+            </ul>
+            <div class="burger__social">
+              <div class="nav__social-item-reg">
+                <a class="nav__social-link" href="#!">
+                  <img
+                    class="nav__social-img"
+                    src="../img/vk.svg"
+                    alt="social ico"
+                  />
+                </a>
+              </div>
+              <div class="nav__social-item-reg">
+                <a class="nav__social-link" href="#!">
+                  <img
+                    class="nav__social-img"
+                    src="../img/instagram.svg"
+                    alt="social ico"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-check">
+          <div class="container">
+            <div class="page-check__inner" >
+              <div class="page-check__buttons">
+                <button class="page-check__btn page-check__btn--active" data-filter="by-car">по авто</button>
+                <button class="page-check__btn" data-filter="by-right">по правам</button>
+                <button class="page-check__btn" data-filter="by-order">по постановлению</button>
+              </div>
+              <div class="page-check__content">
+                <div class="page-check__item by-car page-check__item--active">
+                  <form class="page-check__form">
+                    <div class="page-check__form-item">
+                      <h5 class="page-check__form-title">
+                        Поиск по автомобилю
+                      </h5>
+                      <div class="page-check__fotm-input-box">
+                        <input
+                          type="text"
+                          class="page-check__form-input page-check__form-input--numcar"
+                          placeholder="A 000 AA"
+                        />
+                        <input
+                          type="text"
+                          class="page-check__form-input page-check__form-input page-check__form-input--num"
+                          placeholder="000"
+                        />
+                        <div class="page-check__form-lang-box">
+                          <div class="page-check__form-lang">rus</div>
+                          <img
+                            src="./img/content/page-check-lang-1.svg"
+                            alt="images"
+                            class="page-check__lang-img"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="page-check__form-item">
+                      <h5 class="page-check__form-title">Поиск по водителю</h5>
+                      <input
+                        type="text"
+                        class="page-check__form-input"
+                        placeholder="00 00 000000"
+                      />
+                    </div>
+                    <div class="page-check__form-item">
+                      <h5 class="page-check__form-title">
+                        Поиск по постановлению
+                      </h5>
+                      <input
+                        type="text"
+                        class="page-check__form-input"
+                        placeholder="kate123@mail.ru"
+                      />
+                    </div>
+                    <div class="page-check__form-item-btn">
+                      <div class="page-check__form-text">
+                        Нажимая «Проверить штрафы» вы соглашаетесь с политикой
+                        обработки персональных данных
+                      </div>
+                      <button class="page-check__form-btn button">
+                        Проверить штрафы
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="page-check__item by-right">
+                  <form class="page-check__form">
+                    <div class="page-check__form-item">
+                      <h5 class="page-check__form-title">
+                        Поиск по автомобилю
+                      </h5>
+                      <div class="page-check__fotm-input-box">
+                        <input
+                          type="text"
+                          class="page-check__form-input page-check__form-input--numcar"
+                          placeholder="A 000 AA"
+                        />
+                        <input
+                          type="text"
+                          class="page-check__form-input page-check__form-input page-check__form-input--num"
+                          placeholder="000"
+                        />
+                        <div class="page-check__form-lang-box">
+                          <div class="page-check__form-lang">rus</div>
+                          <img
+                            src="./img/content/page-check-lang-1.svg"
+                            alt="images"
+                            class="page-check__lang-img"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="page-check__form-item">
+                      <h5 class="page-check__form-title">Поиск по водителю</h5>
+                      <input
+                        type="text"
+                        class="page-check__form-input"
+                        placeholder="00 00 000000"
+                      />
+                    </div>
+                    <div class="page-check__form-item">
+                      <h5 class="page-check__form-title">
+                        Поиск по постановлению
+                      </h5>
+                      <input
+                        type="text"
+                        class="page-check__form-input"
+                        placeholder="kate123@mail.ru"
+                      />
+                    </div>
+                    <div class="page-check__form-item-btn">
+                      <div class="page-check__form-text">
+                        Нажимая «Проверить штрафы» вы соглашаетесь с политикой
+                        обработки персональных данных
+                      </div>
+                      <button class="page-check__form-btn button">
+                        Проверить штрафы
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="page-check__item by-order">
+                  <form class="page-check__form">
+                    <div class="page-check__form-item">
+                      <h5 class="page-check__form-title">
+                        Поиск по автомобилю
+                      </h5>
+                      <div class="page-check__fotm-input-box">
+                        <input
+                          type="text"
+                          class="page-check__form-input page-check__form-input--numcar"
+                          placeholder="A 000 AA"
+                        />
+                        <input
+                          type="text"
+                          class="page-check__form-input page-check__form-input page-check__form-input--num"
+                          placeholder="000"
+                        />
+                        <div class="page-check__form-lang-box">
+                          <div class="page-check__form-lang">rus</div>
+                          <img
+                            src="./img/content/page-check-lang-1.svg"
+                            alt="images"
+                            class="page-check__lang-img"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="page-check__form-item">
+                      <h5 class="page-check__form-title">Поиск по водителю</h5>
+                      <input
+                        type="text"
+                        class="page-check__form-input"
+                        placeholder="00 00 000000"
+                      />
+                    </div>
+                    <div class="page-check__form-item">
+                      <h5 class="page-check__form-title">
+                        Поиск по постановлению
+                      </h5>
+                      <input
+                        type="text"
+                        class="page-check__form-input"
+                        placeholder="kate123@mail.ru"
+                      />
+                    </div>
+                    <div class="page-check__form-item-btn">
+                      <div class="page-check__form-text">
+                        Нажимая «Проверить штрафы» вы соглашаетесь с политикой
+                        обработки персональных данных
+                      </div>
+                      <button class="page-check__form-btn button">
+                        Проверить штрафы
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-card">
+          <div class="container">
+            <div class="page-card__inner">
+              <div class="page-card__slider">
+                <div class="page-card__slider-item">
+                  <div class="page-card__slider-box">
+                    <div class="page-card__slider-text">
+                      Скидка 50% при оплате
+                    </div>
+                    <img
+                      src="./img/page-card-1.svg"
+                      alt="iamges"
+                      class="page-card__slider-img"
+                    />
+                  </div>
+                </div>
+                <div class="page-card__slider-item">
+                  <div class="page-card__slider-box">
+                    <div class="page-card__slider-text">
+                      Уведомления о новых штрафах
+                    </div>
+                    <img
+                      src="./img/page-card-2.svg"
+                      alt="iamges"
+                      class="page-card__slider-img"
+                    />
+                  </div>
+                </div>
+                <div class="page-card__slider-item">
+                  <div class="page-card__slider-box">
+                    <div class="page-card__slider-text">
+                      Фиксируется дата, время, место нарушения и фото
+                    </div>
+                    <img
+                      src="./img/page-card-3.svg"
+                      alt="iamges"
+                      class="page-card__slider-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="official-sources">
+          <div class="container">
+            <div class="official-sources__inner">
+              <h2 class="official-sources__title title">
+                Официальные источники данных
+              </h2>
+              <div class="official-sources__subtitle">
+                Сервис подключен к ГИС ГМП — государственной информационной
+                системе, в которой собираются все штрафы. Благодаря этому мы
+                можем быстро отследить любое начисление.
+              </div>
+              <div class="official-sources__cards">
+                <div class="official-sources__card">
+                  <img
+                    src="./img/official-sources-card-1.svg"
+                    alt="images"
+                    class="official-sources__card-img"
+                  />
+                  <h4 class="official-sources__card-title">ГИБДД</h4>
+                  <div class="official-sources__card-subtitle">
+                    Нарушение ПДД
+                  </div>
+                </div>
+                <div class="official-sources__card">
+                  <img
+                    src="./img/official-sources-card-2.svg"
+                    alt="images"
+                    class="official-sources__card-img"
+                  />
+                  <h4 class="official-sources__card-title">МАДИ</h4>
+                  <div class="official-sources__card-subtitle">
+                    Нарушение ПДД
+                  </div>
+                </div>
+                <div class="official-sources__card">
+                  <img
+                    src="./img/official-sources-card-3.svg"
+                    alt="images"
+                    class="official-sources__card-img"
+                  />
+                  <h4 class="official-sources__card-title">АМПП</h4>
+                  <div class="official-sources__card-subtitle">
+                    Платные парковки
+                  </div>
+                </div>
+                <div class="official-sources__card">
+                  <img
+                    src="./img/official-sources-card-4.svg"
+                    alt="images"
+                    class="official-sources__card-img"
+                  />
+                  <h4 class="official-sources__card-title">МУГАДН</h4>
+                  <div class="official-sources__card-subtitle">
+                    Ространс-надзор
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="how-work">
+          <div class="container">
+            <div
+              class="how-work__inner"
+              style="background-image: url('./img/content/how-work-bg.jpg')"
+            >
+              <div class="how-work__content">
+                <h2 class="how-work__title title">Как это работает</h2>
+                <div class="how-work__subtitle">
+                  Укажите номер документа, по которому хотите проверить штрафы и
+                  электронную почту для получения информации
+                </div>
+                <ul class="how-work__items">
+                  <li class="how-work__item">
+                    <div class="how-work__item-num">1</div>
+                    <div class="how-work__item-info">
+                      <div class="how-work__item-title">
+                        Укажите госномер и СТС
+                      </div>
+                      <div class="how-work__item-text">
+                        Так мы сможем запросить данные по вашим штрафам в
+                        госорганах
+                      </div>
+                    </div>
+                  </li>
+                  <li class="how-work__item">
+                    <div class="how-work__item-num">2</div>
+                    <div class="how-work__item-info">
+                      <div class="how-work__item-title">Найдём все штрафы</div>
+                      <div class="how-work__item-text">
+                        Из базы ГИБДД, ГИС ГМП и службы судебных приставов
+                        (ФССП)
+                      </div>
+                    </div>
+                  </li>
+                  <li class="how-work__item">
+                    <div class="how-work__item-num">3</div>
+                    <div class="how-work__item-info">
+                      <div class="how-work__item-title">
+                        Оплатите скидкой 50%
+                      </div>
+                      <div class="how-work__item-text">
+                        Скидка действует первые 20 дней после вынесения
+                        поставления о штрафе
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <button class="how-work__btn button">Проверить штрафы</button>
+              </div>
+              <div class="how-work__decor">
+                <img
+                  src="./img/content/how-work-main.png"
+                  alt="images"
+                  class="how-work__img how-work__img--main"
+                />
+                <img
+                  src="./img/content/how-work-right.png"
+                  alt="images"
+                  class="how-work__img how-work__img--right"
+                />
+                <img
+                  src="./img/content/how-work-left.png"
+                  alt="images"
+                  class="how-work__img how-work__img--left"
+                />
+                <img
+                  src="./img/content/how-work-small.png"
+                  alt="images"
+                  class="how-work__img how-work__img--small"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pay-fines">
+          <div class="container">
+            <div class="pay-fines__inner">
+              <div class="pay-fines__info">
+                <div class="pay-fines__info-content">
+                  <h2 class="pay-fines__info-title title">Оплата штрафов</h2>
+                  <div class="pay-fines__info-subtitle">
+                    Сервис подключен к ГИС ГМП — государственной информационной
+                    системе, в которой собираются все штрафы. Благодаря этому мы
+                    можем быстро отследить любое начисление.
+                  </div>
+                </div>
+                <div class="pay-fines__info-cards">
+                  <img
+                    src="./img/content/cards.png"
+                    alt="images"
+                    class="pay-fines__info-card"
+                  />
+                </div>
+              </div>
+              <div class="pay-fines__items">
+                <div class="pay-fines__item">
+                  <img
+                    src="./img/content/fines-1.svg"
+                    alt="images"
+                    class="pay-fines__item-img"
+                  />
+                  <div class="pay-fines__item-box">
+                    <h6 class="pay-fines__item-title">Это удобно</h6>
+                    <div class="pay-fines__item-text">
+                      Оплачивайте штрафы картой «Мир», MasterCard или Maestro;
+                      сервисами Apple Pay или Google Pay. Каждый платеж
+                      шифруется по стандарту PCI DSS.
+                    </div>
+                  </div>
+                </div>
+                <div class="pay-fines__item">
+                  <img
+                    src="./img/content/fines-2.svg"
+                    alt="images"
+                    class="pay-fines__item-img"
+                  />
+                  <div class="pay-fines__item-box">
+                    <h6 class="pay-fines__item-title">С гарантией</h6>
+                    <div class="pay-fines__item-text">
+                      Мы гарантируем автоматическое списание штрафа через базу
+                      ГИС ГМП или вернем все деньги. При любой задержке
+                      обратитесь в нашу техподдержку — она работает в режиме
+                      24/7 и решит все проблемы с оплатой.
+                    </div>
+                  </div>
+                </div>
+                <div class="pay-fines__item">
+                  <img
+                    src="./img/content/fines-3.svg"
+                    alt="images"
+                    class="pay-fines__item-img"
+                  />
+                  <div class="pay-fines__item-box">
+                    <h6 class="pay-fines__item-title">Квитанция об оплате</h6>
+                    <div class="pay-fines__item-text">
+                      Сразу после отправки денег с карты вы получаете квитанцию
+                      об уплате — она хранится в личном кабинете и дублируется
+                      на электронную почту.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="discount">
+          <div class="container">
+            <div
+              class="discount__inner"
+              style="background-image: url('./img/content/discount-bg.jpg')"
+            >
+              <div class="discount__content">
+                <h2 class="discount__title title">
+                  Скидка 50% при оплате штрафа онлайн
+                </h2>
+                <div class="discount__subtitle">
+                  Укажите номер документа, по которому хотите Через 1-2 часа с
+                  момента регистрации штрафа в базе ГИБДД вы:
+                </div>
+                <ul class="discount__items">
+                  <li class="discount__item">
+                    <div class="discount__item-num">1</div>
+                    <div class="discount__item-info">
+                      <div class="discount__item-title">
+                        Моментальные уведомления
+                      </div>
+                      <div class="discount__item-text">
+                        Получаете уведомление с полной информацией по нарушению.
+                      </div>
+                    </div>
+                  </li>
+                  <li class="discount__item">
+                    <div class="discount__item-num">2</div>
+                    <div class="discount__item-info">
+                      <div class="discount__item-title">Свобода во времени</div>
+                      <div class="discount__item-text">
+                        Через приложение платите в любое время дня и ночи.
+                      </div>
+                    </div>
+                  </li>
+                  <li class="discount__item">
+                    <div class="discount__item-num">3</div>
+                    <div class="discount__item-info">
+                      <div class="discount__item-title">Экономия</div>
+                      <div class="discount__item-text">
+                        Экономите 50% суммы штрафа (если он предусматривает
+                        такую льготу).
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="discount__decor">
+                <img
+                  src="./img/content/discount-decor.png"
+                  alt="images"
+                  class="discount__img"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="news-main">
+          <div class="container">
+            <div class="news-main__inner">
+              <div class="news-main__info">
+                <div class="news-main__info-content">
+                 <h2 class="news-main__title title">Новости и статьи</h2>
+                <div class="news-main__buttons">
+                  <button class="news-main__btn news-main__btn--active" data-filter="all">Все</button>
+                  <button class="news-main__btn" data-filter="insurance">Страхование</button>
+                  <button class="news-main__btn" data-filter="taxes">Налоги</button>
+                  <button class="news-main__btn" data-filter="penalties">Штрафы</button>
+                  <button class="news-main__btn" data-filter="changes">Изменения в ПДД</button>
+                  <button class="news-main__btn" data-filter="practice">Судебная практика</button>
+                </div> 
+                </div>
+                <div class="news-main__slider-buttons">
+                  <button class="news-main__slider-button slider-button--prev">
+                    <img src="./img/slider-arrow-left.svg" alt="" class="news-main__slider-button-ico">
+                  </button>
+                  <button class="news-main__slider-button slider-button--next">
+                    <img src="./img/slider-arrow-right.svg" alt="" class="news-main__slider-button-ico">
+                  </button>
+                </div>
+              </div>
+
+
+                <div class="news-main__sliders">
+                  <div class="news-main__slider swiper all news-main__slider--active">
+                  <div class="swiper-wrapper news-main__items">
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-1.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-2.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-read">
+                          <a href="#!" class="news-main__item-read-link">
+                            Читать полностью
+                          </a>
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-3.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-4.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-1.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- --------------Slider 2 ------------ -->
+
+                <div class="news-main__slider swiper insurance">
+                  <div class="swiper-wrapper news-main__items">
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-1.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-1.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-1.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-1.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-1.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- --------------Slider 3 ------------ -->
+
+                <div class="news-main__slider taxes insurance">
+                  <div class="swiper-wrapper news-main__items">
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-1.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- --------------Slider 4 ------------ -->
+
+                <div class="news-main__slider penalties insurance">
+                  <div class="swiper-wrapper news-main__items">
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-1.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- --------------Slider 5 ------------ -->
+
+                <div class="news-main__slider changes insurance">
+                  <div class="swiper-wrapper news-main__items">
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-1.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- --------------Slider 6 ------------ -->
+
+                <div class="news-main__slider practice insurance">
+                  <div class="swiper-wrapper news-main__items">
+                    <div class="news-main__item swiper-slide">
+                      <div class="news-main__item-img-box">
+                        <a href="#!" class="news-main__item-img-link">
+                          <img
+                            src="./img/content/news-img-1.jpg"
+                            alt="images"
+                            class="news-main__item-img"
+                        /></a>
+
+                        <a href="#!" class="news-main__item-img-btn"
+                          >Страхование</a
+                        >
+                      </div>
+                      <div class="news-main__item-box">
+                        <div class="news-main__item-date">19.10.2022</div>
+                        <h5 class="news-main__item-title">
+                          <a href="#!">
+                            Завершилась Неделя безопасности дорожного движения
+                          </a>
+                        </h5>
+                        <div class="news-main__item-subtitle">
+                          Мероприятие прошло при поддержке Министерства
+                          транспорта и дорожного хозяйства Республики
+                          Татарстан ...
+                        </div>
+                        <div class="news-main__item-social">
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-message.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">145</div>
+                          </a>
+                          <a class="news-main__item-social-box" href="#!">
+                            <img
+                              src="./img/content/news-view.svg"
+                              alt="images"
+                              class="news-main__social-img"
+                            />
+                            <div class="news-main__item-social-text">
+                              12 579
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+
+                <div class="news-main__link"><a href="#!">Посмотреть все новости</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                <!-- <div class="swiper news-main__slide">
+
+                  <div class="news-main__items-box swiper-wrapper">
+
+                    <div class="news-main__items swiper-slide">
+                      
+                    </div>
+                  </div>
+
+                  <div class="news__slide-btn swiper-button-prev"></div>
+                  <div class="news__slide-btn swiper-button-next"></div>
+                </div> -->
+            </div>
+          </div>
+        </section>
+        <section class="notifications">
+          <div class="container">
+            <div class="notifications__inner">
+              <div class="notifications__content">
+                <h2 class="notifications__title title">
+                  Уведомления о новых штрафах
+                </h2>
+                <div class="notifications__subtitle">
+                  Получайте бесплатную автоматическую рассылку уведомлений при
+                  появлении новых сведений о штрафах ГИБДД.
+                </div>
+                <form class="notifications__form">
+                  <div class="notifications__form-item">
+                    <div class="notifications__form-title">
+                      Свидетельство о регистрации ТС
+                    </div>
+                    <input
+                      type="text"
+                      class="notifications__form-input notifications__input--first"
+                      placeholder="00 AA 000000"
+                    />
+                  </div>
+                  <div class="notifications__form-item">
+                    <div class="notifications__form-title">
+                      Поиск по постановлению
+                    </div>
+                    <input
+                      type="text"
+                      class="notifications__form-input notifications__input--second"
+                      placeholder="kate123@mail.ru"
+                    />
+                  </div>
+                  <div class="notifications__form-item">
+                    <div class="notifications__form-text">
+                      Нажимая «Проверить штрафы» вы соглашаетесь с
+                      <span style="color: #02cc9b"
+                        >политикой обработки персональных данных</span
+                      >
+                    </div>
+                    <button class="notifications__form-btn button">
+                      Подключить уведомления
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <img
+                src="./img/notifications-bg-img.png"
+                alt="images"
+                class="notifications__bg-img"
+              />
+              <img
+                src="./img/notifications-decor-img.png"
+                alt="images"
+                class="notifications__decor-img"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__content">
+              <div class="footer__content-info">
+                <div class="logo">
+                  <img src="../img/logo.svg" alt="logo" class="logo-img" />
+                </div>
+                <a href="#!" class="footer__info-phone">+7 495 123 45 57</a>
+                <a href="#!" class="footer__info-email">ucar@mail.com</a>
+                <div class="footer__copyright">
+                  © ООО «U-Car», 2022 Все права защищены. Предложение не
+                  является публичной офертой.
+                </div>
+              </div>
+              <nav class="footer__content-nav">
+                <div class="footer__nav-column">
+                  <h6 class="footer__nav-title footer__title">Услуги</h6>
+                  <ul class="footer__nav-link">
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link"
+                        >Проверить и оплатить штрафы
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link"
+                        >Проверить и оплатить ФССП
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link"
+                        >Обжаловать штраф
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link">Оформить ОСАГО</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link">Оплатить налоги</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__nav-column">
+                  <h6 class="footer__nav-title footer__title">
+                    Правовая информация
+                  </h6>
+                  <ul class="footer__nav-link">
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link">Статьи и обзоры </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link">Автоновости </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link">Таблица</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link"
+                        >Нормативные документы
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#!" class="footer__nav-link"
+                        >Подразделения ГИБДД</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="footer__pay">
+              <h6 class="footer__pay-title footer__title">Мы принимаем</h6>
+              <div class="footer__cards">
+                <div class="footer__card">
+                  <a href="#!" class="footer__card-link">
+                    <img
+                      src="../img/footer-card-1.svg"
+                      alt="images card"
+                      class="footer__card-img"
+                    />
+                  </a>
+                </div>
+                <div class="footer__card">
+                  <a href="#!" class="footer__card-link">
+                    <img
+                      src="../img/footer-card-2.svg"
+                      alt="images card"
+                      class="footer__card-img"
+                    />
+                  </a>
+                </div>
+                <div class="footer__card">
+                  <a href="#!" class="footer__card-link">
+                    <img
+                      src="../img/footer-card-3.svg"
+                      alt="images card"
+                      class="footer__card-img"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="footer__social">
+                <a class="footer__social-item" href="#!">
+                  <img
+                    src="../img/vk.svg"
+                    alt="ico"
+                    class="footer__social-ico"
+                  />
+                </a>
+                <a class="footer__social-item" href="#!">
+                  <img
+                    src="../img/instagram.svg"
+                    alt="ico"
+                    class="footer__social-ico"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal-window">
+      <div class="window-overlay" ></div>
+      <div class="modal-content">
+          <div class="modal-window-close">
+              <button class="modal-window-close-btn">
+                  <img src="./img/content/modal-close-ico.svg" alt="" class="modal-window-close-ico">
+              </button>
+          </div>
+          <div class="modal-window-info">
+              <h1 class="modal-title">Забыли пароль?</h1>
+              <p class="modal-text">Введите вашу почту и мы пришлем Ваш новый пароль</p> 
+
+              <form class="modal__form">
+                <div class="modal__input-text">E-mail</div>
+                <input type="text" class="modal__input" placeholder="Введите вашу почту">
+                <button class="modal__btn">Отправить</button>
+              </form>
+          </div> 
+      </div>
+  </div>
+
+    <script src="js/main.min.js"></script>
+    <!-- <script src="../js libs/easy-toggler-master/dist/easy-toggler.jss"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"
+      defer
+    ></script>
+  </body>
+</html>
